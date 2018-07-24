@@ -1,6 +1,6 @@
 {% set name = "praw" %}
-{% set version = "5.4.0" %}
-{% set sha256 = "04dc118381383dc5d2ae7a16e23d074fb42abe49659a9777828c062fc90780b7" %}
+{% set version = "6.0.0" %}
+{% set sha256 = "ccd3463c838d912073c82cc226f7d62fb01aecf2f33dff3f0456afc688f45376" %}
 
 package:
   name: {{ name|lower }}
