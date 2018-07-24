@@ -19,12 +19,15 @@ agent and you're set.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/praw-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/praw-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/praw-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/praw-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/praw/badges/version.svg)](https://anaconda.org/conda-forge/praw)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/praw/badges/downloads.svg)](https://anaconda.org/conda-forge/praw)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-praw-green.svg)](https://anaconda.org/conda-forge/praw) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/praw.svg)](https://anaconda.org/conda-forge/praw) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/praw.svg)](https://anaconda.org/conda-forge/praw) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/praw.svg)](https://anaconda.org/conda-forge/praw) |
 
 Installing praw
 ===============
