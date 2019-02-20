@@ -25,6 +25,7 @@ requirements:
     - python
     - prawcore >=0.14.0,<0.15
     - update_checker >=0.16
+    - websocket-client
 
 test:
   imports:
