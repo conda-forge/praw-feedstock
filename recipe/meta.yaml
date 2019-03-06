@@ -1,6 +1,6 @@
 {% set name = "praw" %}
-{% set version = "6.0.0" %}
-{% set sha256 = "ccd3463c838d912073c82cc226f7d62fb01aecf2f33dff3f0456afc688f45376" %}
+{% set version = "6.1.1" %}
+{% set sha256 = "6a8f4991cca5d4ac0323d77959be904821ef8dd1bac40d8bd90853d804a9887e" %}
 
 package:
   name: {{ name|lower }}
@@ -25,6 +25,7 @@ requirements:
     - python
     - prawcore >=0.14.0,<0.15
     - update_checker >=0.16
+    - websocket-client
 
 test:
   imports:
