@@ -23,9 +23,9 @@ requirements:
     - pytest-runner
   run:
     - python
-    - prawcore >=0.14.0,<0.15
+    - prawcore >=1.0.1,<2.0
     - update_checker >=0.16
-    - websocket-client
+    - websocket-client >=0.54.0
 
 test:
   imports:
