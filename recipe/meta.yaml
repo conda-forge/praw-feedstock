@@ -1,6 +1,6 @@
 {% set name = "praw" %}
-{% set version = "6.3.1" %}
-{% set sha256 = "bf004df19989756e9c5aac5cefdb7d8779760f1ec2f1e9b1d6a2195cc1099d96" %}
+{% set version = "6.5.1" %}
+{% set sha256 = "544904cb821afff43c22e2dad4245658d41135d84b3a9463a5e29dd132da6efe" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
