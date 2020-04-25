@@ -1,6 +1,6 @@
 {% set name = "praw" %}
-{% set version = "6.3.1" %}
-{% set sha256 = "bf004df19989756e9c5aac5cefdb7d8779760f1ec2f1e9b1d6a2195cc1099d96" %}
+{% set version = "7.0.0" %}
+{% set sha256 = "65129169d560800261908415ed955f3cbc63648549820b3ccce0a823ffa2fd78" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -36,7 +36,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: "Python Reddit API Wrapper allows for simple access to Reddit's API"
+  summary: Python Reddit API Wrapper allows for simple access to Reddit's API
   description: |
     PRAW, an acronym for "Python Reddit API Wrapper", is a python package that
     allows for simple access to Reddit's API. PRAW aims to be easy to use and
