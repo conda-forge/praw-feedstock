@@ -1,6 +1,6 @@
 {% set name = "praw" %}
-{% set version = "7.0.0" %}
-{% set sha256 = "65129169d560800261908415ed955f3cbc63648549820b3ccce0a823ffa2fd78" %}
+{% set version = "7.1.2" %}
+{% set sha256 = "3deaa094d510b6b03358c7b6a36c37e314b77d8750efdf97a770c175886c4444" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3.5
     - pip
     - pytest-runner
