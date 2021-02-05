@@ -5,9 +5,13 @@ Home: http://praw.readthedocs.io/
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/praw-feedstock/blob/master/LICENSE.txt)
 
 Summary: Python Reddit API Wrapper allows for simple access to Reddit's API
+
+Development: https://github.com/praw-dev/praw
+
+Documentation: http://praw.readthedocs.io/
 
 PRAW, an acronym for "Python Reddit API Wrapper", is a python package that
 allows for simple access to Reddit's API. PRAW aims to be easy to use and
