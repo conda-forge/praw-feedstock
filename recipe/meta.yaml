@@ -1,6 +1,6 @@
 {% set name = "praw" %}
-{% set version = "7.4.0" %}
-{% set sha256 = "08957060b6c770a6ab38b04a80e7edd2d08434f1bc95c0ec71a88d3a1e4b78d2" %}
+{% set version = "7.5.0" %}
+{% set sha256 = "f91bfc827ddd0718a6ec24f16f5cad0ea9279de82144e1afcbe47694d1e70cdb" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
   run:
