@@ -18,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
   run:
-    - python >=3.6
+    - python >=3.7
     - prawcore >=2.1,<3
     - update_checker >=0.18
     - websocket-client >=0.54.0
@@ -35,7 +35,7 @@ test:
     - praw
 
 about:
-  home: http://praw.readthedocs.io/
+  home: https://praw.readthedocs.io/
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE.txt
@@ -46,7 +46,7 @@ about:
     internally follows all of Reddit's API rules. With PRAW there's no need to
     introduce sleep calls in your code. Give your client an appropriate user
     agent and you're set.
-  doc_url: http://praw.readthedocs.io/
+  doc_url: https://praw.readthedocs.io/
   dev_url: https://github.com/praw-dev/praw
 
 extra:
