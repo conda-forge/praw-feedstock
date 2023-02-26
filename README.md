@@ -1,11 +1,11 @@
-About praw
-==========
+About praw-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/praw-feedstock/blob/main/LICENSE.txt)
 
 Home: https://praw.readthedocs.io/
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/praw-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python Reddit API Wrapper allows for simple access to Reddit's API
 
