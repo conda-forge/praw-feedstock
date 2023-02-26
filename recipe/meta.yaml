@@ -1,4 +1,5 @@
 {% set name = "praw" %}
+{% set import = "praw" %}
 {% set version = "7.7.0" %}
 {% set sha256 = "090d209b35f79dfa36082ed1cdaa0f9a753b9277a69cfe8f9f32fa1827411a5a" %}
 
@@ -8,7 +9,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -32,7 +33,7 @@ test:
   commands:
     - pip check
   imports:
-    - praw
+    - {{ import }}
 
 about:
   home: https://praw.readthedocs.io/
