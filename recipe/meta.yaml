@@ -1,7 +1,7 @@
 {% set name = "praw" %}
 {% set import = "praw" %}
-{% set version = "7.7.0" %}
-{% set sha256 = "090d209b35f79dfa36082ed1cdaa0f9a753b9277a69cfe8f9f32fa1827411a5a" %}
+{% set version = "7.7.1" %}
+{% set sha256 = "f1d7eef414cafe28080dda12ed09253a095a69933d5c8132eca11d4dc8a070bf" %}
 
 package:
   name: {{ name|lower }}
