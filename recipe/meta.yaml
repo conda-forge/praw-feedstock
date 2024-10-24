@@ -1,7 +1,7 @@
 {% set name = "praw" %}
 {% set import = "praw" %}
-{% set version = "7.7.1" %}
-{% set sha256 = "f1d7eef414cafe28080dda12ed09253a095a69933d5c8132eca11d4dc8a070bf" %}
+{% set version = "7.8.0" %}
+{% set sha256 = "910a1478d79ce3892bf35b2c52c90f575d6618dfce248e7bf90eed354c19589c" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
