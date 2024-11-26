@@ -20,8 +20,8 @@ build:
 requirements:
   host:
     - python {{ python_min }}
+    - flit-core >=3.4,<4
     - pip
-    - setuptools
   run:
     - python >={{ python_min }}
     - prawcore >=2.1,<3
