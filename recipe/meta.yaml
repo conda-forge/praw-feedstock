@@ -8,14 +8,13 @@ package:
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -49,8 +48,8 @@ about:
     internally follows all of Reddit's API rules. With PRAW there's no need to
     introduce sleep calls in your code. Give your client an appropriate user
     agent and you're set.
-  doc_url: https://praw.readthedocs.io/
   dev_url: https://github.com/praw-dev/praw
+  doc_url: https://praw.readthedocs.io/
 
 extra:
   recipe-maintainers:
