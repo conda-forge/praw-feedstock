@@ -1,7 +1,7 @@
 {% set name = "praw" %}
 {% set import = "praw" %}
-{% set version = "7.8.0" %}
-{% set sha256 = "910a1478d79ce3892bf35b2c52c90f575d6618dfce248e7bf90eed354c19589c" %}
+{% set version = "7.8.1" %}
+{% set sha256 = "3c5767909f71e48853eb6335fef7b50a43cbe3da728cdfb16d3be92904b0a4d8" %}
 
 package:
   name: {{ name|lower }}
@@ -29,7 +29,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - prawcore >=2.1,<3
+    - prawcore >=2.4,<3
     - update_checker >=0.18
     - websocket-client >=0.54.0
 
