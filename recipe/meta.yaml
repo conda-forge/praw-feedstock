@@ -10,6 +10,12 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
+  patches:
+    # Statically specify version in pyproject.toml
+    # Avoids requiring dynamic execution of package and runtime deps at build
+    # See praw-dev/praw#2004 (should be fixed in praw >7.8.1)
+    # https://github.com/praw-dev/praw/issues/2004
+    - static-version.patch
 
 build:
   noarch: python
