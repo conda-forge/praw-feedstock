@@ -7,7 +7,7 @@ Home: https://praw.readthedocs.io/
 
 Package license: BSD-2-Clause
 
-Summary: Python Reddit API Wrapper allows for simple access to Reddit's API
+Summary: Python Reddit API Wrapper
 
 Development: https://github.com/praw-dev/praw
 
