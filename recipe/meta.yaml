@@ -10,12 +10,6 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    # Statically specify version in pyproject.toml
-    # Avoids requiring dynamic execution of package and runtime deps at build
-    # See praw-dev/praw#2004 (should be fixed in praw >7.8.1)
-    # https://github.com/praw-dev/praw/issues/2004
-    - static-version.patch
 
 build:
   noarch: python
@@ -25,13 +19,15 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core >=3.4,<4
+    - hatchling
     - pip
   run:
     - python >={{ python_min }}
-    - prawcore >=2.4,<3
-    - update_checker >=0.18
-    - websocket-client >=0.54.0
+    - defusedxml =0.7.1
+    - prawcore >=4,<5
+    - typing_extensions
+    - update_checker >=1.0,<2.0
+    - websocket-client >=0.54.0,<2
 
 test:
   requires:
@@ -47,7 +43,7 @@ about:
   license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: Python Reddit API Wrapper allows for simple access to Reddit's API
+  summary: Python Reddit API Wrapper
   description: |
     PRAW, an acronym for "Python Reddit API Wrapper", is a python package that
     allows for simple access to Reddit's API. PRAW aims to be easy to use and
