@@ -51,31 +51,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `praw` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install praw
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install praw
 ```
 
-It is possible to list all of the versions of `praw` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add praw
+# for installing globally
+pixi global install praw
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `praw` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search praw --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search praw --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search praw --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -87,6 +129,8 @@ mamba repoquery whoneeds praw --channel conda-forge
 # List dependencies of `praw`:
 mamba repoquery depends praw --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
